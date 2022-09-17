@@ -5,7 +5,7 @@ The performance of this map is extremely quick, inserting and searching 100,000 
 
 There are built-in hash functions for the basic types (string, int, float, double) but you will have to provide your own hash function for user-defined types. See [hash functions](src/hash_function.c) for examples.
 
-When fetching values with `map_get`, an enum `map_code_e` is returned with either `SUCCESS` or `DUPLICATE_KEY`. In the case of duplicate keys, they are silently ignored so you must check for that status code if you want any special behaviour to occur.
+When inserting values with `map_put`, an enum `map_code_e` is returned with either `SUCCESS` or `DUPLICATE_KEY`. In the case of duplicate keys, they are silently ignored so you must check for that status code if you want any special behaviour to occur.
 
 # Sample Usage
 See [this](src/example.c) for a complete example of how the map is used.
