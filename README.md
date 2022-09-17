@@ -6,7 +6,7 @@ The performance of this map is extremely quick, inserting and searching 100,000 
 There are built-in hash functions for the basic types (string, int, float, double) but you will have to provide your own hash function for user-defined types. See [hash functions](src/hash_function.c) for examples.
 
 # Sample Usage
-See [this](src/driver.c) for a complete example of how the map is used.
+See [this](src/example.c) for a complete example of how the map is used.
 
 # Building from Source
 After cloning this repo, in the root directory you can:
