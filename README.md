@@ -23,6 +23,6 @@ This will generate a static library `libhashmap.a`.
 You can add this project as a git submodule into your project. Just add the following in your CMakeLists wherever appropriate:
 1. `add_subdirectory(/path/to/hashmap)`
 2. `target_include_directories([your target] PUBLIC ${hashmap_SOURCE_DIR}/include)`
-3. `target_link_libraries([your target] hashmap)
+3. `target_link_libraries([your target] hashmap)`
 
 Then it should become a part of your build and you can use `#include "hashmap.h"`.
